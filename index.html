@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!-- Linking an external stylesheet to apply styles to the page -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- Heading to indicate the purpose of this section -->
+    <h1>Fitness Progress Keeper</h1>
+
+    <div class="exercise-container">
+        <div class="exercise">
+            <h2>Push-ups</h2>
+            <h3 id="pushup-count">0</h3>
+            <button class="increment-btn" onclick="increment('pushup')">Increment</button>
+            <button class="save-btn" onclick="save('pushup')">Save</button>
+            <p id="pushup-save">Challenges Accomplished: </p>
+        </div>
+
+        <div class="exercise">
+            <h2>Squats</h2>
+            <h3 id="squat-count">0</h3>
+            <button class="increment-btn" onclick="increment('squat')">Increment</button>
+            <button class="save-btn" onclick="save('squat')">Save</button>
+            <p id="squat-save">Challenges Accomplished: </p>
+        </div>
+
+        <div class="exercise">
+            <h2>Sit-ups</h2>
+            <h3 id="situp-count">0</h3>
+            <button class="increment-btn" onclick="increment('situp')">Increment</button>
+            <button class="save-btn" onclick="save('situp')">Save</button>
+            <p id="situp-save">Challenges Accomplished: </p>
+        </div>
+    </div>
+
+    <!-- Button to show the total -->
+    <button class="total-btn" onclick="showTotal()">Show Total</button>
+    <p id="total-el">Total Challenges Completed: </p>
+
+    <!-- Button to reset and start from scratch -->
+    <button class="reset-btn" onclick="letStartFromScratch()">Let's Start From Scratch</button>
+
+    <!-- Including an external JavaScript file for functionality -->
+    <script src="app.js"></script>
+</body>
+
+</html>
